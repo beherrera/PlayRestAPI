@@ -37,6 +37,9 @@ matrix:
 before_deploy:
 - sbt dist
 
+addons:
+  ssh_known_hosts: 13.67.132.88
+
 deploy:
   provider: script
   skip_cleanup: true
