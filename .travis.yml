@@ -38,9 +38,8 @@ before_deploy:
 - sbt dist
 
 deploy:
-
   provider: script
-    skip_cleanup: true
-    script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/target/universal  bernardoherrera@13.67.132.88:/home/bernardoherrera
-    on:
-      branch: 2.6.x
+  skip_cleanup: true
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/target/universal  bernardoherrera@13.67.132.88:/home/bernardoherrera
+  on:
+    branch: 2.6.x
