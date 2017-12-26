@@ -35,6 +35,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/target/universal  bernardoherrera@13.67.132.88:/home/bernardoherrera
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/target/universal  bernardoherrera@52.165.158.46:/home/bernardoherrera
   on:
     branch: 2.6.x
