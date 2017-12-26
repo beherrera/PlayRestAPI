@@ -24,7 +24,7 @@ matrix:
   - scala: 2.11.12
     jdk: oraclejdk9
 addons:
-  ssh_known_hosts: 13.67.132.88
+  ssh_known_hosts: 52.165.158.46
 before_deploy:
 - sbt dist
 - openssl aes-256-cbc -K $encrypted_5cacd6c3533d_key -iv $encrypted_5cacd6c3533d_iv
